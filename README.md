@@ -8,7 +8,7 @@
 
 ---
 
-## Objetivo General
+## Objetivo
 
 Determinar el nivel de fermentación de un grano de cacao (Bueno, Parcial o Malo) a partir de una imagen del mismo.
 
