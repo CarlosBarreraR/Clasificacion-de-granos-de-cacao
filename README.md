@@ -1,6 +1,6 @@
 # Proyecto de Clasificación del Nivel de Fermentación de Granos de Cacao
 
-![Banner](/BannerThunders.jpg)
+![Banner](/Clasificacion-Cacao.png)
 
 --- 
 ## Autores
