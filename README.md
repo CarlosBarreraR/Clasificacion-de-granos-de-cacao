@@ -1,57 +1,64 @@
-# Proyecto de Clasificación de imagenes de vehículos por su marca
+# Proyecto de Clasificación del Nivel de Fermentación de Granos de Cacao
 
 ![Banner](/BannerThunders.jpg)
 
 --- 
 ## Autores
-- Anderson Rincón Mantilla - 2230064, Cristian Jacob Quintero Portilla - 2230052
+- Carlos David Barrera Rangel - 2230056, Fernando Vargas Quintero - 2200347
 
 ---
 
 ## Objetivo General
 
-Determinar de manera precisa la marca a la que pertenece un auto unicamente con una imagen completa del mismo.
+Determinar el nivel de fermentación de un grano de cacao (Bueno, Parcial o Malo) a partir de una imagen del mismo.
 
 ---
 
 ## Objetivos Específicos
-- Determianr de que marca es un auto.
-- Extraer la información mas relevante de una imagen.
-- Aplicar data augmentation para balancear los datos.
-- Entrenar y evaluar distintos modelos de clasificación.
+- Clasificar un grano de cacao en Bueno, Parcial o Malo.
+- Extraer la información más relevante de cada imagen (características de color en HSV y RGB).
+- Entrenar y evaluar distintos modelos de clasificación supervisada.
 - Comparar el desempeño de los distintos modelos implementados.
+- Explorar la estructura de los datos con técnicas no supervisadas (clustering y reducción de dimensionalidad).
 
 ---
 
 ## Dataset
 
-Se uso un dataset con imagenes de autos de 7 marcas distintas ([Kaggle](https://www.kaggle.com/datasets/kshitij192/cars-image-dataset)) 
+Se usó un dataset propio con imágenes de granos de cacao de 19 escenas distintas.
 
 **Características:**
-- Formato: Imágenes digitales (JPEG) organizadas en directorios.
-- Volumen: 4,165 imágenes en total.
-- Distribución: Dividido en dos carpetas principales: train y test.
-- Clasificación: 7 marcas de vehículos distintas (multiclase).
+- Formato: imágenes digitales (JPEG) organizadas en una carpeta por escena ("Escena 1", "Escena 2", ...).
+- Contenido de cada escena: la foto general ("cacao.jpg"), la imagen de etiquetas de fermentación ("label_fermentation.jpg"), archivo YOLO ("cacao.txt") y la carpeta "Fotos" con la imagen recortada de cada semilla.
+- Volumen: 938 granos etiquetados en total (las no etiquetadas se descartaron).
+- Clasificación: 3 niveles de fermentación (Bueno, Parcial y Malo).
+
 
 ---
 
 ## Modelos
 Los métodos evaluados en este proyecto fueron:
+
+**Supervisados**
+- Regresión Logística.
 - Gaussian Naive Bayes.
 - Decision Tree.
 - Random Forest.
-- Support Vector Classifier (SVC)
+- Support Vector Classifier (SVC).
 - Deep Learning.
-- Kmeans
-- DBscan
-- PCA
-- T-sne
+
+**No supervisados**
+- K-means.
+- DBSCAN.
+- Agglomerative Clustering.
+- PCA.
+- t-SNE.
   
-El rendimiento de los modelos se evaluó principalmente con f1-score, como consecuencia de la proporción desbalanceada de imagenes por marca
+Se evaluaron con matriz de confusión y métricas por clase, junto con promedios macro (precisión, sensibilidad y F1), por el desbalance entre clases
 ---
 ## Enlaces
-- Repositorio de Github: [Clasificación_de_vehículos_por_marca](https://github.com/Anderzz0n/Clasificacion-de-vehilos-por-marca).
-- Dataset: [Kaggle](https://www.kaggle.com/datasets/kshitij192/cars-image-dataset).
-- Slides: [Canva](https://canva.link/xl2oa27salmsewa).
-- Video del proyecto: [Youtube](https://youtu.be/qPeZhTww2Qo).
+- Repositorio de Github: [Clasificacion-de-granos-de-cacao](https://github.com/CarlosBarreraR/Clasificacion-de-granos-de-cacao).
+- Dataset: [Imágenes de granos de cacao (Google Drive)](https://drive.google.com/drive/folders/1IDlLL4ZjDn5a1bad0DYRnIsEuwhbYaAW?usp=sharing).
+- Slides: [Canva](https://canva.link/rgqyci5v50uvo26).
+- Video del proyecto: [Youtube]().
 ---
