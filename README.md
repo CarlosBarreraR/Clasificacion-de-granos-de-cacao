@@ -60,5 +60,5 @@ Se evaluaron con matriz de confusión y métricas por clase, junto con promedios
 - Repositorio de Github: [Clasificacion-de-granos-de-cacao](https://github.com/CarlosBarreraR/Clasificacion-de-granos-de-cacao).
 - Dataset: [Imágenes de granos de cacao (Google Drive)](https://drive.google.com/drive/folders/1IDlLL4ZjDn5a1bad0DYRnIsEuwhbYaAW?usp=sharing).
 - Slides: [Canva](https://canva.link/rgqyci5v50uvo26).
-- Video del proyecto: [Youtube]().
+- Video del proyecto: [Youtube](https://www.youtube.com/watch?v=_a5lfKqKChs).
 ---
